@@ -24,12 +24,12 @@
             <!-- Textarea where user pastes text -->
             <div class="form-group">
                 <label for="text1">Your Text</label>
-                <textarea id="text1" rows="5" name="textarea1" placeholder="Enter or paste text here"></textarea>
+                <textarea id="text1" rows="6" name="textarea1" placeholder="Enter or paste text here"></textarea>
             </div>
             <!-- Text area where user specifies words to be scrambled -->
             <div class="form-group">
                 <label for="text">Words to Scramble</label>
-               <textarea id="text2" rows="5" name="textarea2" placeholder="Enter words to scramble "></textarea>
+               <textarea id="text2" rows="3" name="textarea2" placeholder="Enter words to scramble "></textarea>
             </div>
 
             <!-- Input form where user specifies what to be used for scrambling -->
@@ -46,7 +46,16 @@
             <!-- Results of the process is displayed here -->
             <div class="form-group">
                 <label for="text3">Scrambled Text</label>
-                <textarea id="text3" rows="5" name="textarea3" readonly></textarea>
+                <textarea id="text3" rows="6" name="textarea3" readonly></textarea>
+            </div>
+            <div id="popup" class="hidden">
+                <div id="popup-content">
+                    <p >Total Scanned Words:<span id="word-count" class="count"></span></p>
+                    <p >Total Scrambled Words:<span id="scramble-count" class="count"></span></p>
+                    <p >Total Scanned Characters:<span id="character-count" class="count"></span></p>
+                    <p >Total Scrambled Characters: <span id="scram-cha-count" class="count"></span></p>
+                    <button id="close-btn">Close</button>
+                </div>
             </div>
         </form>
     </div>

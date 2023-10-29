@@ -1,5 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Dosis', sans-serif;
+    font-size: 200;
     background-color: #f1f1f1;
 }
 
@@ -46,11 +47,12 @@ h2 {
 }
 .form-group textarea{
     position: relative;
-    width: 100%;
+    max-width: 100%;
+    width: 500px;
     padding: 10px;
     border: 1px solid #080707;
     border-radius: 10px;
-    width: 400px;
+    
 }
 .form-group input{
     width: 100%;
@@ -77,8 +79,54 @@ h2 {
     background-color: #c178d4;
 }
 
+.hidden{
+    display:none
+}
+
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+#popup-content {
+    text-align: center;
+}
+
+#word-count #scramble-count #character-count #scram-cha-count{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#close-btn {
+    padding: 10px 20px;
+    background-color: #9233a5;
+    color: #fff;
+    border: none;
+}
+
+#close-btn:hover {
+    background-color: #ca89db;
+}
+
+.count{
+    color:#9233a5;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+
+
 /* Media query for smartphones */
-@media  (max-width: 600px) {
+@media  (max-width: 700px) {
 
 .banner{
         display: none;
@@ -137,4 +185,49 @@ h2 {
 .form-group button:hover {
     background-color:#c178d4;
 }
+
+
+.hidden{
+    display:none
+}
+
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+#popup-content {
+    text-align: center;
+}
+
+#word-count #scramble-count #character-count #scram-cha-count{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#close-btn {
+    padding: 10px 20px;
+    background-color: #9233a5;
+    color: #fff;
+    border: none;
+}
+
+#close-btn:hover {
+    background-color: #ca89db;
+}
+
+.count{
+    color:#9233a5;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
 }

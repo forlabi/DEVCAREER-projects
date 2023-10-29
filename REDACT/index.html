@@ -5,29 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Area Form</title>
     <link rel="stylesheet" type="text/css" href="/REDACT/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap" rel="stylesheet">
 
-    
-        
 </head>
 <body>
     <div class="container">
-        <h2>Text Area Form</h2>
+        <h2>REDⱯCTR</h2>
         <form>
             <div class="form-group">
-                <label for="text1">Text Area 1</label>
-                <textarea id="text1" rows="4" name="textarea1"></textarea>
+                <label for="text1">Your Text</label>
+                <textarea id="text1" rows="5" name="textarea1" placeholder="Enter or paste text here"></textarea>
             </div>
             <div class="form-group">
-                <label for="text2">Text Area 2</label>
-                <textarea id="text2" rows="4" name="textarea2" value="dgdgd"></textarea>
+                <label for="text">Text to Scramble</label>
+                <textarea id="text2" rows="5" name="textarea2" placeholder="Enter words to scramble "></textarea>
             </div>
             <div class="form-group">
-                <button id = btn >Redact Now</button>
+                <label for="text">Hash</label>
+                <input type="text" id="hash" value="*">
+            </div>
+            <div class="form-group">
+                <button id="btn" >Redact Now</button>
             </div>
 
             <div class="form-group">
-                <label for="text3">Text Area 2</label>
-                <textarea id="text3" rows="4" name="textarea3"></textarea>
+                <label for="text3">Scrambled Text</label>
+                <textarea id="text3" rows="5" name="textarea3" readonly></textarea>
             </div>
         </form>
     </div>

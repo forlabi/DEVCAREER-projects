@@ -2,6 +2,87 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f1f1f1;
 }
+
+.banner{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    display: inline;
+    
+}
+.container {
+    display: flex;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+h2 {
+    position: fixe;
+    font-family: 'Dosis', sans-serif;
+    font-size: 400;
+    color: #9233a5;;
+    margin-left: 80px;
+}
+
+.form-container {
+    
+    margin-left: 0px;
+
+    
+}
+.form-group {
+    font-family: 'Dosis', sans-serif;
+    font-size: 200;
+    margin: 20px 0;
+    padding: 0 30px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group textarea{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #080707;
+    border-radius: 10px;
+    width: 400px;
+}
+.form-group input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #080707;
+    border-radius: 10px;
+    width: 20px;
+}
+.form-group button {
+  
+    text-align: center;
+    background-color: #9233a5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+    
+}
+
+
+.form-group button:hover {
+    background-color: #c178d4;
+}
+
+/* Media query for smartphones */
+@media  (max-width: 600px) {
+
+.banner{
+        display: none;
+    }
 .container {
     max-width: 400px;
     margin: 0 auto;
@@ -11,10 +92,11 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 h2 {
-    text-align: center;
+   
     font-family: 'Dosis', sans-serif;
     font-size: 400;
-    color: #0056b3;
+    color: #9233a5;
+    margin-bottom: 20px;
 }
 .form-group {
     font-family: 'Dosis', sans-serif;
@@ -30,20 +112,20 @@ h2 {
 .form-group textarea{
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid#080707;
     border-radius: 10px;
 }
 .form-group input{
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #080707;
     border-radius: 10px;
     width: 20px;
 }
 .form-group button {
   
     text-align: center;
-    background-color: #007bff;
+    background-color: #9233a5;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -52,7 +134,7 @@ h2 {
     
 }
 
-
 .form-group button:hover {
-    background-color: #0056b3;
+    background-color:#c178d4;
+}
 }

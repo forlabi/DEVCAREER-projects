@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Area Form</title>
+    <title>Redactr Scramble App</title>
     <link rel="stylesheet" type="text/css" href="/REDACT/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,25 +11,39 @@
 
 </head>
 <body>
+    
+    <h2>REDACTR</h2> 
     <div class="container">
-        <h2>REDⱯCTR</h2>
-        <form>
+       <!--Banner Image  -->
+        <div >
+            <img class="banner" src="/REDACT/image/image.png" alt="">
+        </div>
+
+        <!-- Entire Form wrapper -->
+        <form class="form-container">
+            <!-- Textarea where user pastes text -->
             <div class="form-group">
                 <label for="text1">Your Text</label>
                 <textarea id="text1" rows="5" name="textarea1" placeholder="Enter or paste text here"></textarea>
             </div>
+            <!-- Text area where user specifies words to be scrambled -->
             <div class="form-group">
-                <label for="text">Text to Scramble</label>
-                <textarea id="text2" rows="5" name="textarea2" placeholder="Enter words to scramble "></textarea>
+                <label for="text">Words to Scramble</label>
+               <textarea id="text2" rows="5" name="textarea2" placeholder="Enter words to scramble "></textarea>
             </div>
+
+            <!-- Input form where user specifies what to be used for scrambling -->
             <div class="form-group">
-                <label for="text">Hash</label>
+                <label for="text">Hash to Use</label>
                 <input type="text" id="hash" value="*">
             </div>
+
+            <!-- Button to process results -->
             <div class="form-group">
                 <button id="btn" >Redact Now</button>
             </div>
-
+            
+            <!-- Results of the process is displayed here -->
             <div class="form-group">
                 <label for="text3">Scrambled Text</label>
                 <textarea id="text3" rows="5" name="textarea3" readonly></textarea>

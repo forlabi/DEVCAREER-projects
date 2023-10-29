@@ -1,6 +1,6 @@
-const button = document.getElementById('btn');
+const button = document.getElementById('btn'); // button element
 
-button.addEventListener("click", function (event) {
+button.addEventListener("click", function (event) { //Event listener to action scrambling function
     event.preventDefault();
     const userInput = document.getElementById('text1').value;
     const userScramble = document.getElementById('text2').value;
@@ -8,12 +8,12 @@ button.addEventListener("click", function (event) {
     const hashKey = document.getElementById('hash').value;
     
 
-    scrambleInput(userInput, userScramble, finalOutput, hashKey);
+    scrambleInput(userInput, userScramble, finalOutput, hashKey); //Scramblig function is called with arguments
 });
 
 
-
-const scrambleInput = function (userEntry, wordToScramble, finalOutput, keyToUse) {
+//Scramblin function
+const scrambleInput = function (userEntry, wordToScramble, finalOutput, keyToUse) { 
     const wordsToMaskArray = wordToScramble.split(',').map(word => word.trim());
     let scrambledText = userEntry;
     for (let word of wordsToMaskArray){

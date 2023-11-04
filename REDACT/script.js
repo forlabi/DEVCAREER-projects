@@ -39,16 +39,21 @@ const scrambleInput = function (userEntry, wordToScramble, finalOutput, keyToUse
 
     // Loop to match and scramble selected words
         wordsToMaskArray.forEach(word => {
+            // check non-whitespace entries
+            if (/\S/.test(word)) { 
             const scrambledPattern = new RegExp(`\\b${word}\\b`, 'gi');
             const matches = scrambledText.match(scrambledPattern);
-            if (matches) {
-                scrambleCounter += matches.length;
-                scramCharacter += matches.join('').length; // Gets the character count of the scrambled words
-                
-            }
+            
+                if (matches) {
+                    scrambleCounter += matches.length;
+                    scramCharacter += matches.join('').length; // Gets the character count of the scrambled words
+                    
+                }
             scrambledText = scrambledText.replace(scrambledPattern, keyToUse.repeat(4));
             
-        });
+        } else {
+        finalOutput.value = scrambledText; //Returns the user entry if the there 'word' contains just whitespace
+      }
         
         finalOutput.value = scrambledText; // Final output text
        
@@ -60,7 +65,7 @@ const scrambleInput = function (userEntry, wordToScramble, finalOutput, keyToUse
         scramChaCount.textContent = scramCharacter; 
         
         
-    }
+    });
 
     // Copy button for the output
     
@@ -81,4 +86,4 @@ copyButton.addEventListener('click', (event) => {
 closeButton.addEventListener('click', (event) => {
     popup.classList.add('hidden');
     event.preventDefault();
-});
+})}

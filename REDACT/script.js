@@ -45,7 +45,7 @@ const scrambleInput = function (userEntry, wordToScramble, finalOutput, keyToUse
                 scramCharacter += matches.join('').length; // Gets the character count of the scrambled words
                 
             }
-            scrambledText = scrambledText.replace(scrambledPattern, keyToUse.repeat(word.length));
+            scrambledText = scrambledText.replace(scrambledPattern, keyToUse.repeat(4));
             
         });
         

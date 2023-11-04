@@ -1,5 +1,6 @@
 const button = document.getElementById('btn'); // button element
 const closeButton = document.getElementById('close-btn'); // button element
+const copyButton = document.getElementById('copy-button');
 
 
 button.addEventListener('click', function (event) { //Event listener to action scrambling function
@@ -60,8 +61,19 @@ const scrambleInput = function (userEntry, wordToScramble, finalOutput, keyToUse
         
         
     }
-    
 
+    // Copy button for the output
+    
+copyButton.addEventListener('click', (event) => {
+       
+        const finalOutput = document.getElementById('text3');
+        finalOutput.select();
+        document.execCommand("copy");
+        event.preventDefault();
+        // 
+        alert("Copied!" );
+
+      })
   
     
 
